@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/custombackground"
+tools:context=".PlantSearch"
+tools:showIn="@layout/activity_plant_search">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:text="@string/search_your_plant"
+        android:id="@+id/searchPlantTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:text="@string/plant_name_title"
+        android:id="@+id/plantNameTitle"
+        android:layout_below="@+id/searchPlantTitle"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchPlantUserInput"
+        android:layout_below="@+id/plantNameTitle"
+        android:width="250dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter Plant Name"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_button"
+        android:id="@+id/searchButton"
+        android:layout_below="@+id/searchPlantUserInput"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="searchClick"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:text="@string/title_search_plant"
+        android:id="@+id/searchList"
+        android:layout_below="@+id/searchButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/searchList"
+        android:id="@+id/searchPlantList"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:left="10dp" android:right="10dp" android:bottom="10dp" android:top="10dp">
+        <shape android:shape="rectangle">
+
+            <padding android:left="5dp" android:right="5dp" android:bottom="5dp" android:top="5dp"/>
+            <stroke android:width="2dp" android:color="#33691E"/>
+        </shape>
+    </item>
+
+    <item android:left="10dp" android:right="10dp" android:bottom="10dp" android:top="10dp">
+        <shape android:shape="rectangle">
+
+            <padding android:left="10dp" android:right="10dp" android:bottom="10dp" android:top="10dp"/>
+            <stroke android:width="2dp" android:color="#33691E"/>
+        </shape>
+    </item>
+
+    <item android:left="2dp" android:right="2dp" android:bottom="2dp" android:top="2dp">
+        <bitmap android:src="@drawable/flowershape"
+            android:gravity="left|top"/>
+    </item>
+
+    <item android:left="2dp" android:right="2dp" android:bottom="2dp" android:top="2dp">
+        <bitmap android:src="@drawable/flowershape"
+            android:gravity="right|bottom"/>
+    </item>
+
+
+</layer-list>
